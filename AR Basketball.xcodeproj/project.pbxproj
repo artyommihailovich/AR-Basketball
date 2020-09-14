@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4C62912250886C500D56CBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C62911250886C500D56CBD /* AppDelegate.swift */; };
+		A4C62914250886C500D56CBD /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C62913250886C500D56CBD /* art.scnassets */; };
+		A4C62916250886C500D56CBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C62915250886C500D56CBD /* ViewController.swift */; };
+		A4C62919250886C500D56CBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C62917250886C500D56CBD /* Main.storyboard */; };
+		A4C6291B250886C600D56CBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C6291A250886C600D56CBD /* Assets.xcassets */; };
+		A4C6291E250886C600D56CBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C6291C250886C600D56CBD /* LaunchScreen.storyboard */; };
+		A4C62929250886C700D56CBD /* AR_BasketballTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C62928250886C700D56CBD /* AR_BasketballTests.swift */; };
+		A4C62934250886C700D56CBD /* AR_BasketballUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C62933250886C700D56CBD /* AR_BasketballUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4C62925250886C700D56CBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4C62906250886C500D56CBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4C6290D250886C500D56CBD;
+			remoteInfo = "AR Basketball";
+		};
+		A4C62930250886C700D56CBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4C62906250886C500D56CBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4C6290D250886C500D56CBD;
+			remoteInfo = "AR Basketball";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4C6290E250886C500D56CBD /* AR Basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Basketball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C62911250886C500D56CBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4C62913250886C500D56CBD /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		A4C62915250886C500D56CBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4C62918250886C500D56CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4C6291A250886C600D56CBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4C6291D250886C600D56CBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4C6291F250886C600D56CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C62924250886C700D56CBD /* AR BasketballTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR BasketballTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C62928250886C700D56CBD /* AR_BasketballTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_BasketballTests.swift; sourceTree = "<group>"; };
+		A4C6292A250886C700D56CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4C6292F250886C700D56CBD /* AR BasketballUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR BasketballUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4C62933250886C700D56CBD /* AR_BasketballUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_BasketballUITests.swift; sourceTree = "<group>"; };
+		A4C62935250886C700D56CBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4C6290B250886C500D56CBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C62921250886C700D56CBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C6292C250886C700D56CBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4C62905250886C500D56CBD = {
+			isa = PBXGroup;
+			children = (
+				A4C62910250886C500D56CBD /* AR Basketball */,
+				A4C62927250886C700D56CBD /* AR BasketballTests */,
+				A4C62932250886C700D56CBD /* AR BasketballUITests */,
+				A4C6290F250886C500D56CBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4C6290F250886C500D56CBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4C6290E250886C500D56CBD /* AR Basketball.app */,
+				A4C62924250886C700D56CBD /* AR BasketballTests.xctest */,
+				A4C6292F250886C700D56CBD /* AR BasketballUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4C62910250886C500D56CBD /* AR Basketball */ = {
+			isa = PBXGroup;
+			children = (
+				A4C62911250886C500D56CBD /* AppDelegate.swift */,
+				A4C62913250886C500D56CBD /* art.scnassets */,
+				A4C62915250886C500D56CBD /* ViewController.swift */,
+				A4C62917250886C500D56CBD /* Main.storyboard */,
+				A4C6291A250886C600D56CBD /* Assets.xcassets */,
+				A4C6291C250886C600D56CBD /* LaunchScreen.storyboard */,
+				A4C6291F250886C600D56CBD /* Info.plist */,
+			);
+			path = "AR Basketball";
+			sourceTree = "<group>";
+		};
+		A4C62927250886C700D56CBD /* AR BasketballTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4C62928250886C700D56CBD /* AR_BasketballTests.swift */,
+				A4C6292A250886C700D56CBD /* Info.plist */,
+			);
+			path = "AR BasketballTests";
+			sourceTree = "<group>";
+		};
+		A4C62932250886C700D56CBD /* AR BasketballUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A4C62933250886C700D56CBD /* AR_BasketballUITests.swift */,
+				A4C62935250886C700D56CBD /* Info.plist */,
+			);
+			path = "AR BasketballUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4C6290D250886C500D56CBD /* AR Basketball */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C62938250886C700D56CBD /* Build configuration list for PBXNativeTarget "AR Basketball" */;
+			buildPhases = (
+				A4C6290A250886C500D56CBD /* Sources */,
+				A4C6290B250886C500D56CBD /* Frameworks */,
+				A4C6290C250886C500D56CBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AR Basketball";
+			productName = "AR Basketball";
+			productReference = A4C6290E250886C500D56CBD /* AR Basketball.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4C62923250886C700D56CBD /* AR BasketballTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C6293B250886C700D56CBD /* Build configuration list for PBXNativeTarget "AR BasketballTests" */;
+			buildPhases = (
+				A4C62920250886C700D56CBD /* Sources */,
+				A4C62921250886C700D56CBD /* Frameworks */,
+				A4C62922250886C700D56CBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4C62926250886C700D56CBD /* PBXTargetDependency */,
+			);
+			name = "AR BasketballTests";
+			productName = "AR BasketballTests";
+			productReference = A4C62924250886C700D56CBD /* AR BasketballTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4C6292E250886C700D56CBD /* AR BasketballUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4C6293E250886C700D56CBD /* Build configuration list for PBXNativeTarget "AR BasketballUITests" */;
+			buildPhases = (
+				A4C6292B250886C700D56CBD /* Sources */,
+				A4C6292C250886C700D56CBD /* Frameworks */,
+				A4C6292D250886C700D56CBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4C62931250886C700D56CBD /* PBXTargetDependency */,
+			);
+			name = "AR BasketballUITests";
+			productName = "AR BasketballUITests";
+			productReference = A4C6292F250886C700D56CBD /* AR BasketballUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4C62906250886C500D56CBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					A4C6290D250886C500D56CBD = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					A4C62923250886C700D56CBD = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = A4C6290D250886C500D56CBD;
+					};
+					A4C6292E250886C700D56CBD = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = A4C6290D250886C500D56CBD;
+					};
+				};
+			};
+			buildConfigurationList = A4C62909250886C500D56CBD /* Build configuration list for PBXProject "AR Basketball" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4C62905250886C500D56CBD;
+			productRefGroup = A4C6290F250886C500D56CBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4C6290D250886C500D56CBD /* AR Basketball */,
+				A4C62923250886C700D56CBD /* AR BasketballTests */,
+				A4C6292E250886C700D56CBD /* AR BasketballUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4C6290C250886C500D56CBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C62914250886C500D56CBD /* art.scnassets in Resources */,
+				A4C6291E250886C600D56CBD /* LaunchScreen.storyboard in Resources */,
+				A4C6291B250886C600D56CBD /* Assets.xcassets in Resources */,
+				A4C62919250886C500D56CBD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C62922250886C700D56CBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C6292D250886C700D56CBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4C6290A250886C500D56CBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C62916250886C500D56CBD /* ViewController.swift in Sources */,
+				A4C62912250886C500D56CBD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C62920250886C700D56CBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C62929250886C700D56CBD /* AR_BasketballTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C6292B250886C700D56CBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4C62934250886C700D56CBD /* AR_BasketballUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4C62926250886C700D56CBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4C6290D250886C500D56CBD /* AR Basketball */;
+			targetProxy = A4C62925250886C700D56CBD /* PBXContainerItemProxy */;
+		};
+		A4C62931250886C700D56CBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4C6290D250886C500D56CBD /* AR Basketball */;
+			targetProxy = A4C62930250886C700D56CBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4C62917250886C500D56CBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C62918250886C500D56CBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4C6291C250886C600D56CBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4C6291D250886C600D56CBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4C62936250886C700D56CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4C62937250886C700D56CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4C62939250886C700D56CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWPDQ88TSM;
+				INFOPLIST_FILE = "AR Basketball/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ArtyomMihailovich.AR-Basketball";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4C6293A250886C700D56CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWPDQ88TSM;
+				INFOPLIST_FILE = "AR Basketball/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ArtyomMihailovich.AR-Basketball";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4C6293C250886C700D56CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWPDQ88TSM;
+				INFOPLIST_FILE = "AR BasketballTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ArtyomMihailovich.AR-BasketballTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR Basketball.app/AR Basketball";
+			};
+			name = Debug;
+		};
+		A4C6293D250886C700D56CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWPDQ88TSM;
+				INFOPLIST_FILE = "AR BasketballTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ArtyomMihailovich.AR-BasketballTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AR Basketball.app/AR Basketball";
+			};
+			name = Release;
+		};
+		A4C6293F250886C700D56CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWPDQ88TSM;
+				INFOPLIST_FILE = "AR BasketballUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ArtyomMihailovich.AR-BasketballUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR Basketball";
+			};
+			name = Debug;
+		};
+		A4C62940250886C700D56CBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWPDQ88TSM;
+				INFOPLIST_FILE = "AR BasketballUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ArtyomMihailovich.AR-BasketballUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AR Basketball";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4C62909250886C500D56CBD /* Build configuration list for PBXProject "AR Basketball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C62936250886C700D56CBD /* Debug */,
+				A4C62937250886C700D56CBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C62938250886C700D56CBD /* Build configuration list for PBXNativeTarget "AR Basketball" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C62939250886C700D56CBD /* Debug */,
+				A4C6293A250886C700D56CBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C6293B250886C700D56CBD /* Build configuration list for PBXNativeTarget "AR BasketballTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C6293C250886C700D56CBD /* Debug */,
+				A4C6293D250886C700D56CBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4C6293E250886C700D56CBD /* Build configuration list for PBXNativeTarget "AR BasketballUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4C6293F250886C700D56CBD /* Debug */,
+				A4C62940250886C700D56CBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4C62906250886C500D56CBD /* Project object */;
+}
