@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4514380250F634000CE2FB5 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = A451437F250F634000CE2FB5 /* CustomButtons.swift */; };
 		A4C62912250886C500D56CBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C62911250886C500D56CBD /* AppDelegate.swift */; };
 		A4C62914250886C500D56CBD /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A4C62913250886C500D56CBD /* art.scnassets */; };
 		A4C62916250886C500D56CBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C62915250886C500D56CBD /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A451437F250F634000CE2FB5 /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
 		A4C6290E250886C500D56CBD /* AR Basketball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR Basketball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C62911250886C500D56CBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4C62913250886C500D56CBD /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				A4C62911250886C500D56CBD /* AppDelegate.swift */,
 				A4C62913250886C500D56CBD /* art.scnassets */,
 				A4C62915250886C500D56CBD /* ViewController.swift */,
+				A451437F250F634000CE2FB5 /* CustomButtons.swift */,
 				A4C62917250886C500D56CBD /* Main.storyboard */,
 				A4C6291A250886C600D56CBD /* Assets.xcassets */,
 				A4C6291C250886C600D56CBD /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4C62916250886C500D56CBD /* ViewController.swift in Sources */,
+				A4514380250F634000CE2FB5 /* CustomButtons.swift in Sources */,
 				A4C62912250886C500D56CBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

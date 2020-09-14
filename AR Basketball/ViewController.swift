@@ -12,6 +12,9 @@ import ARKit
 class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var addHoopButton: UIButton!
+    var currentNode: SCNNode!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,16 +23,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         // Show statistics such as fps and timing information
-        sceneView.showsStatistics = true
+        //sceneView.showsStatistics = true
         
         // Create a new scene
         let scene = SCNScene()
         
         // Set the scene to the view
         sceneView.scene = scene
-        
-        addBackBoard()
-        
+
         registerGestureRecognizer()
     }
     
@@ -71,7 +72,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let ballNode = SCNNode(geometry: ball)
         ballNode.position = cameraPosition
         
+        let physicsShape = SCNPhysicsShape(node: ballNode, options: nil)
+        let physicsBody = SCNPhysicsBody(type: .dynamic, shape: physicsShape)
+        
+        ballNode.physicsBody = physicsBody
+        
+        //Add Force to our ball...
+        let forceVector: Float = 6
+        ballNode.physicsBody?.applyForce(SCNVector3(x: cameraOrientation.x * forceVector, y: cameraOrientation.y * forceVector, z: cameraOrientation.z * forceVector), asImpulse: true)
+        
         sceneView.scene.rootNode.addChildNode(ballNode)
+        
     }
     
     
@@ -87,7 +98,37 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
         
         backBoardNode.position = SCNVector3(x: 0, y: 0.5, z: -3)
+        
+        // For understanding our basket ring
+        let physicsShape = SCNPhysicsShape(node: backBoardNode, options: [SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron])
+        let physicsBody = SCNPhysicsBody(type: .static, shape: physicsShape)
+        
+        backBoardNode.physicsBody = physicsBody
+        
+        
         sceneView.scene.rootNode.addChildNode(backBoardNode)
+        currentNode  = backBoardNode
+    }
+    
+    //Create Action for backBoard for moving ±1m.
+    func horizontalAction(node: SCNNode) {
+        let leftAction = SCNAction.move(by: SCNVector3(x: -1, y: 0, z: 0), duration: 3)
+        let rightAction = SCNAction.move(by: SCNVector3(x: 1, y: 0, z: 0), duration: 3)
+        
+        let actionSequence = SCNAction.sequence([leftAction, rightAction])
+        
+        node.runAction(SCNAction.repeat(actionSequence, count: 2))
+    }
+    
+    func roundAction(node: SCNNode) {
+        let upLeft = SCNAction.move(by: SCNVector3(x: 1, y: 1, z: 0 ), duration: 2)
+        let downRight = SCNAction.move(by: SCNVector3(x: 1, y: -1, z: 0 ), duration: 2)
+        let downLeft = SCNAction.move(by: SCNVector3(x: -1, y: -1, z: 0 ), duration: 2)
+        let upRight = SCNAction.move(by: SCNVector3(x: -1, y: 1, z: 0 ), duration: 2)
+        
+        let actionSequence = SCNAction.sequence([upLeft, downRight, downLeft, upRight])
+        
+        node.runAction(SCNAction.repeat(actionSequence, count: 2))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -105,5 +146,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Pause the view's session
         sceneView.session.pause()
+    }
+    
+    //MARK: Action Buttons...
+    @IBAction func addHoop(_ sender: Any) {
+        addBackBoard()
+        addHoopButton.isHidden = true
+        
+    }
+    
+    @IBAction func startRoundedAction(_ sender: Any) {
+        roundAction(node: currentNode)
+    }
+    
+    @IBAction func stopAllActions(_ sender: Any) {
+        currentNode.removeAllActions()
+    }
+    @IBAction func horizontalAction(_ sender: Any) {
+        horizontalAction(node: currentNode)
     }
 }
